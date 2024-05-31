@@ -9,6 +9,8 @@ import { ElementPlusResolver } from 'unplugin-vue-components/resolvers';
 import IconsResolver from 'unplugin-icons/resolver';
 import Icons from 'unplugin-icons/vite';
 import vue from '@vitejs/plugin-vue';
+import vueDevTools from 'vite-plugin-vue-devtools';
+
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const fs = require('fs');
 const OpenSSl = (process.env?.npm_lifecycle_event === 'dev-ssl');
@@ -27,6 +29,7 @@ export default defineConfig({
     }
   },
   plugins: [
+    vueDevTools(),
     vue(),
     AutoImport({
       imports: ['vue'],

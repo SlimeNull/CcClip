@@ -34,7 +34,7 @@ module.exports = {
     'components.d.ts'
   ],
   rules: {
-    'linebreak-style': ['error', 'unix'], // 缩进风格
+    // 'linebreak-style': ['error', 'unix'], // 缩进风格
     'no-constant-condition': 'error', // 允许条件中的常量表达式。 if(true) 无意义
     'no-undef': 'error', // 对未声明变量的任何引用都会导致警告, 应该逐个检查，不应该全局关闭
     'no-fallthrough': 'error', // case中没有break的场景不应该全局关闭，特例单独处理
